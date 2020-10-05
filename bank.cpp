@@ -29,16 +29,25 @@ void doDelete() {
 	doDeleteByCode(code);
 }
 void doAdd() {
-	customers[count].deleted=0;
+	int index=count;
+	for(int i=0;i<count;i++) {
+		if(customers[i].deleted==1) {
+			index=i;
+			break;
+		}
+	}
+	customers[index].deleted=0;
 	cout << "Type code: ";
-	cin >> customers[count].code;
+	cin >> customers[index].code;
 	cout << "Type name: (without space)";
-	cin >> customers[count].name;
+	cin >> customers[index].name;
 	cout << "Type balance: ";
-	cin >> customers[count].balance;
+	cin >> customers[index].balance;
 	cout << "Type address: ";
-	cin >> customers[count].address;
-	count++;
+	cin >> customers[index].address;
+	if(index == count) {
+		count++;
+	}
 }
 void doSum() {
 	int sum=0;
