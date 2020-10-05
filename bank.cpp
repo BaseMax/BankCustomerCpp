@@ -38,7 +38,6 @@ void doAdd() {
 			break;
 		}
 	}
-	customers[index].deleted=0;
 	cout << "Type code: ";
 	cin >> customers[index].code;
 	cout << "Type name: (without space)";
@@ -47,6 +46,7 @@ void doAdd() {
 	cin >> customers[index].balance;
 	cout << "Type address: ";
 	cin >> customers[index].address;
+	customers[index].deleted=0;
 	if(index == count) {
 		count++;
 	}
