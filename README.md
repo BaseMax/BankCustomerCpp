@@ -1,5 +1,20 @@
 # Bank Customer C++
 
+### Structure of Customer/Data
+
+- Code/Bank ID-Number
+- Name
+- Balance
+- Address
+
+### Feature of program
+
+- Add
+- Remove 
+- Sum
+- List
+- Exit
+
 ---------
 
 # Max Base
