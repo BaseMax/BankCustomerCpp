@@ -22,12 +22,14 @@ void doDeleteByCode(int code) {
 		}
 	}
 }
+
 void doDelete() {
 	cout << "Type code of customer: ";
 	int code;
 	cin >> code;
 	doDeleteByCode(code);
 }
+
 void doAdd() {
 	int index=count;
 	for(int i=0;i<count;i++) {
@@ -49,6 +51,7 @@ void doAdd() {
 		count++;
 	}
 }
+
 void doSum() {
 	int sum=0;
 	for(int i=0;i<count;i++) {
@@ -59,10 +62,12 @@ void doSum() {
 	}
 	cout << "Sum of balance are "<< sum << "\n";
 }
+
 void doExit() {
 	cout << "Exit\n";
 	exit(1);
 }
+
 void doPrint(int i) {
 	cout << customers[i].name;
 	cout << "           | ";
@@ -73,6 +78,7 @@ void doPrint(int i) {
 	cout << customers[i].balance;
 	cout << "\n";
 }
+
 void doList() {
 	for(int i=0;i<count;i++) {
 		if(customers[i].deleted==1) {
@@ -84,6 +90,7 @@ void doList() {
 		cout << " =========================== \n";
 	}
 }
+
 int main(int argc, char const *argv[]) {
 	while(true) {
 		cout << "Type what function you need to run:\n";
