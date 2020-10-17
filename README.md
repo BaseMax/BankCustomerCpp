@@ -1,6 +1,8 @@
 # Bank Customer C++
 
 Prepare a easy test and practice for university students C++ (c plus plus)
+
+![Bank Customer Cpp](screen.png)
  
 ### Structure of Customer/Data
 
