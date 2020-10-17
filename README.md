@@ -1,5 +1,7 @@
 # Bank Customer C++
 
+Prepare a easy test and practice for university students C++ (c plus plus)
+ 
 ### Structure of Customer/Data
 
 - Code/Bank ID-Number
@@ -9,10 +11,10 @@
 
 ### Feature of program
 
-- Add
-- Remove 
-- Sum
-- List
+- Add Customer
+- Remove Customer
+- Total customer balance
+- List of Customers
 - Exit
 
 ---------
